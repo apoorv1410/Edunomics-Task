@@ -1,0 +1,16 @@
+<div style="text-align:center">
+  <h2>
+    Task-1 by Apoorv Bhatt
+  </h2>
+  
+  <h4>
+    Coefficient of Restitution : {{coRes}}
+    <mat-slider thumbLabel min="0" max="0.999" step="0.05" value="0.75" (input)="getCoRes($event)"></mat-slider>
+  </h4>
+    <canvas id="lineChart" class="chartContainer" ></canvas>
+
+  <h3 style="text-align:center" >
+    Total number of Bounces : {{bounce_num}}
+  </h3>
+
+<router-outlet></router-outlet>
